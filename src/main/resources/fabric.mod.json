@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "bitches-be-cray-cray",
+	"version": "${version}",
+	"name": "Bitches Be Cray Cray",
+	"description": "A mod where Bitches Do Be Cray Cray!",
+		"authors": [
+		"CremaCrem"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/bitches-be-cray-cray/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.crema.bbcc.BitchesBeCrayCray"
+		],
+		"fabric-datagen": [
+			"net.crema.bbcc.BitchesBeCrayCrayDataGenerator"
+		],
+		"client": [
+			"net.crema.bbcc.BitchesBeCrayCrayClient"
+		]
+	},
+	"mixins": [
+		"bitches-be-cray-cray.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
