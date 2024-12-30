@@ -24,9 +24,5 @@ public class ModItems {
 
     public static void registerModItems() {
         BitchesBeCrayCray.LOGGER.info("Registering Mod Items for " + BitchesBeCrayCray.MOD_ID);
-
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
-            entries.add(AETHER_STAR);
-        });
     }
 }

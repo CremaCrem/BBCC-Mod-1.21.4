@@ -1,5 +1,6 @@
 package net.crema.bbcc;
 
+import net.crema.bbcc.item.ModItemGroups;
 import net.crema.bbcc.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -13,6 +14,7 @@ public class BitchesBeCrayCray implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 	}
 }
